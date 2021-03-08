@@ -5,3 +5,5 @@ Lab 2 An Application
 --------------------
 Lab 3 Job Interview Plan
 --------------------
+Lab 4 Introductory exercise to the terminal
+--------------------
