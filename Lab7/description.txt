@@ -1,0 +1,41 @@
+The description of the problem and solution:
+1. An classical recursion algorithm is computing factorials.
+A factorial function is based on the formula:
+n! = n * (n-1)!
+and
+0! = 1
+, which is a procedure that calls itself. And it just have one parameter x.
+Therefore, the base case of a factorial function is:
+x = 0
+The implementation of factorial function in Scheme language.
+(define factorial ; Symbol Definition
+   (lambda(x)     ; Function and Parameter Declaration
+      (if(< = 0)  ; If Statement
+         1        ;; True Branch - Base Case
+         (* x (factorial(- x 1))) ;; False Branch - Recursion
+      )
+    )
+)
+
+I'm using Repl for trying out Scheme, and the version of scheme that I am using is guile (GNU Guile) 2.2.3
+The output:
+  (factorial 5)
+=> 120
+   (factorial 20)
+=> 2432902008176640000
+   
+2. A function to check if an input is a palindrome. 
+My solution is to take a string and reverse it, them check if the reversed result is equal to the original string.
+The implementation of Palindrome function in Scheme language.
+(define (isPalindrome? str)          ; Symbol Definition
+  (let ((chars (string->list str)))  ; Represent a sequence of characters
+    (equal? chars (reverse chars)))) ; Reverse characters and check equality
+The output:
+  (isPalindrome? "abcdefggfedcba")
+=> #t
+   (isPalindrome? "This is not a palindrome")
+=> #f
+
+References:
+https://www.gnu.org/software/guile/manual/guile.html#Guile-Scheme
+https://www.cs.brandeis.edu/~jrieffel/cs21/quickstart.html
