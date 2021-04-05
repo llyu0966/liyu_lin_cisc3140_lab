@@ -1,5 +1,5 @@
 The description of the problems and solutions:
-1. An classical recursion algorithm is computing factorials.
+1. An classical recursion algorithm - Computing Factorials
 A factorial function is based on the formula:
 n! = n * (n-1)!
 and
@@ -10,7 +10,7 @@ x = 0
 The implementation of factorial function in Scheme language.
 (define factorial ; Symbol Definition
    (lambda(x)     ; Function and Parameter Declaration
-      (if(< = 0)  ; If Statement
+      (if(= x 0)  ; If Statement
          1        ;; True Branch - Base Case
          (* x (factorial(- x 1))) ;; False Branch - Recursion
       )
@@ -24,7 +24,7 @@ The output:
    (factorial 20)
 => 2432902008176640000
    
-2. A function to check if an input is a palindrome. 
+2. A function to check if an input is a palindrome
 My solution is to take a string and reverse it, them check if the reversed result is equal to the original string.
 The implementation of Palindrome function in Scheme language.
 (define (isPalindrome? str)          ; Symbol Definition
