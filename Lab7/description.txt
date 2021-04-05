@@ -1,4 +1,4 @@
-The description of the problem and solution:
+The description of the problems and solutions:
 1. An classical recursion algorithm is computing factorials.
 A factorial function is based on the formula:
 n! = n * (n-1)!
