@@ -20,7 +20,7 @@ If a form field is empty, the JS function alerts a message, e.g. Please enter yo
 <img src="img/validation.png" alt="contact-form" width="400"/>
 
 ### Responsive Form with CSS
-Resize the browser window and the contact form is rendered normally. In the HTML file, add inputs with a matching label for each field, and wrap a <div> element  around each label and input to set a specified width with CSS.
+Resize the browser window and the contact form is rendered normally. In the HTML file, add inputs with a matching label for each field, and wrap a \<div\> element  around each label and input to set a specified width with CSS.
 
 ## Screenshots
 <img src="img/ip.png" alt="iphone 8" width="400"/>
